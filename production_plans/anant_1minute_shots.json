@@ -1,0 +1,856 @@
+{
+  "production_plan": {
+    "title": "Anant and the Dawn Dial",
+    "version": 1,
+    "suggested_batch_id": "anant-one-minute-v1",
+    "story_basis": "A continuity-focused development of the existing CineAI cosmic-odyssey POC: a lone wanderer, an ancient brass astrolabe, a sapphire prism, and a celestial observatory.",
+    "story_premise": "At blue twilight, Anant discovers a sapphire prism in a ruined desert observatory. Its light guides him across a sandstone ridge to an obsidian chamber, where he aligns the prism with an ancient dial and awakens a beacon. He returns to the salt basin as dawn breaks.",
+    "character_bible": {
+      "Anant": "Fictional adult South Asian traveler in his early 30s; medium-brown skin, short black hair, neatly trimmed beard; the same weathered indigo hooded coat, charcoal scarf, dark trousers, brown leather gloves, and small brass satchel in every shot.",
+      "supporting_characters": "None. Do not introduce other people, duplicate Anant, or change his appearance.",
+      "prop_bible": "One palm-sized translucent sapphire prism with fine gold filaments; one weathered brass astrolabe with a single movable ring fixed at the surface observatory lintel; a separate basalt dial in the inner chamber with one carved stone ring and a central prism socket. Anant keeps the prism after shot 8."
+    },
+    "visual_continuity_bible": {
+      "setting": "One connected desert region: reflective salt basin, its half-buried sandstone observatory, a red sandstone ridge, an obsidian arch, and the observatory's underground dial chamber.",
+      "palette_and_light": "Indigo and slate-blue twilight, restrained cyan from the prism, warm brass and gold highlights; progress naturally from twin-moon twilight to a thin golden dawn.",
+      "environment": "Dry salt wind at the basin, red dust on the ridge, cold mist below the bridge, still dust-filled air underground, then easing wind at dawn. No rain or abrupt weather changes.",
+      "style": "Cinematic photorealistic grounded fantasy, natural stone and cloth textures, restrained camera movement, landscape 720x480 framing, no text, logos, or visual overlays."
+    },
+    "generation_contract": {
+      "shot_count": 30,
+      "shot_duration_seconds": 2.0,
+      "raw_duration_seconds": 60.0,
+      "cogvideox_frames_at_8_fps": 16,
+      "transitions": {
+        "allowed_types": [
+          "cut",
+          "fade"
+        ],
+        "fade_after_shots": [
+          10,
+          20
+        ],
+        "fade_overlap_seconds": 0.5,
+        "cut_overlap_seconds": 0.0,
+        "assumed_assembler_transition_duration_seconds": 0.5,
+        "overlap_total_seconds": 1.0,
+        "estimated_final_duration_seconds": 59.0,
+        "duration_formula": "30 x 2.0 seconds raw - 2 fades x 0.5 seconds overlap = 59.0 seconds."
+      },
+      "reference_handling": "required_previous_shot_reference values identify editorial continuity dependencies by shot number. They are not file paths. The current CogVideoX text-to-video provider does not consume previous-video or image references; prompts therefore repeat the character and prop anchors."
+    }
+  },
+  "shots": [
+    {
+      "shot_number": 1,
+      "request": {
+        "prompt": "Cinematic photorealistic wide establishing shot of Anant, an adult South Asian traveler with medium-brown skin, short black hair, a neat beard, weathered indigo hooded coat, charcoal scarf, brown leather gloves, and brass satchel, taking one measured step across a reflective salt basin toward a half-buried sandstone observatory. Twin moons in indigo twilight, steady salt wind, restrained slow push-in, grounded fantasy, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant approaches the half-buried observatory across the salt basin.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Takes one measured step toward the distant observatory.",
+          "location": "Reflective salt basin, observatory visible in the distance.",
+          "time_of_day": "Blue twilight; twin moons are visible.",
+          "weather_environment": "Steady dry crosswind lifts a thin veil of pale salt dust.",
+          "camera_shot_type": "Wide establishing shot.",
+          "camera_direction_movement": "Slow, restrained push-in; Anant advances toward frame center.",
+          "visual_prompt": "Cinematic photorealistic wide establishing shot of Anant, an adult South Asian traveler with medium-brown skin, short black hair, a neat beard, weathered indigo hooded coat, charcoal scarf, brown leather gloves, and brass satchel, taking one measured step across a reflective salt basin toward a half-buried sandstone observatory. Twin moons in indigo twilight, steady salt wind, restrained slow push-in, grounded fantasy, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Establish the fixed indigo coat, charcoal scarf, brass satchel, twin moons, salt basin, and observatory direction. Keep Anant moving toward frame center.",
+          "required_previous_shot_reference": null
+        }
+      }
+    },
+    {
+      "shot_number": 2,
+      "request": {
+        "prompt": "Cinematic photorealistic low tracking insert of Anant's brown leather boots and dark trouser hems as he presses one fresh footprint into the same reflective salt crust. The indigo coat edge and brass satchel briefly enter frame; pale salt dust drifts in the same crosswind, twin-moon blue light, left-to-right movement, shallow depth of field, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "A fresh footprint appears in the reflective salt crust.",
+          "characters_present": [
+            "Anant (lower body)"
+          ],
+          "character_action": "Presses one boot into the salt crust.",
+          "location": "Same salt basin, on the approach to the observatory.",
+          "time_of_day": "Blue twilight under the twin moons.",
+          "weather_environment": "Same dry crosswind; pale salt dust skims the ground.",
+          "camera_shot_type": "Low tracking insert.",
+          "camera_direction_movement": "Tracks left-to-right beside one measured step.",
+          "visual_prompt": "Cinematic photorealistic low tracking insert of Anant's brown leather boots and dark trouser hems as he presses one fresh footprint into the same reflective salt crust. The indigo coat edge and brass satchel briefly enter frame; pale salt dust drifts in the same crosswind, twin-moon blue light, left-to-right movement, shallow depth of field, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Match shot 1's direction of travel, reflective ground, color temperature, and dry wind; do not change footwear or clothing.",
+          "required_previous_shot_reference": "shot_001"
+        }
+      }
+    },
+    {
+      "shot_number": 3,
+      "request": {
+        "prompt": "Cinematic photorealistic rear medium-wide shot of Anant, wearing the same weathered indigo hooded coat, charcoal scarf, gloves, and brass satchel, stopping at the carved sandstone observatory entrance. Salt dust moves past the threshold in the established crosswind; twin moons remain visible behind him, cool indigo light with faint copper edges, static camera, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant reaches the carved entrance of the sandstone observatory.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Stops at the observatory threshold and looks into the dark entrance.",
+          "location": "Exterior doorway of the half-buried sandstone observatory.",
+          "time_of_day": "Blue twilight; twin moons remain visible behind Anant.",
+          "weather_environment": "Dry salt wind passes across the doorway.",
+          "camera_shot_type": "Rear medium-wide shot.",
+          "camera_direction_movement": "Static frame as Anant stops at center.",
+          "visual_prompt": "Cinematic photorealistic rear medium-wide shot of Anant, wearing the same weathered indigo hooded coat, charcoal scarf, gloves, and brass satchel, stopping at the carved sandstone observatory entrance. Salt dust moves past the threshold in the established crosswind; twin moons remain visible behind him, cool indigo light with faint copper edges, static camera, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Continue from the single footprint and approach in shots 1-2. Keep the entrance half-buried and the twin-moon sky behind Anant.",
+          "required_previous_shot_reference": "shot_002"
+        }
+      }
+    },
+    {
+      "shot_number": 4,
+      "request": {
+        "prompt": "Cinematic photorealistic close insert of Anant's brown leather-gloved hand brushing a thin layer of salt from a weathered brass astrolabe ring embedded in the observatory lintel. Fine grains fall from the carved stone; warm copper catches against cool indigo shadow, shallow focus, one deliberate brushing motion, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "The brass astrolabe is revealed beneath salt on the observatory lintel.",
+          "characters_present": [
+            "Anant (hand only)"
+          ],
+          "character_action": "Brushes salt from the astrolabe ring.",
+          "location": "Carved lintel just inside the observatory entrance.",
+          "time_of_day": "Blue twilight spilling into the dark entrance.",
+          "weather_environment": "The wind is muffled indoors; a few grains of salt fall.",
+          "camera_shot_type": "Close insert.",
+          "camera_direction_movement": "Locked camera on one deliberate hand movement.",
+          "visual_prompt": "Cinematic photorealistic close insert of Anant's brown leather-gloved hand brushing a thin layer of salt from a weathered brass astrolabe ring embedded in the observatory lintel. Fine grains fall from the carved stone; warm copper catches against cool indigo shadow, shallow focus, one deliberate brushing motion, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The glove is the same brown leather glove from shot 2; establish the astrolabe as a fixed brass mechanism, not a new prop.",
+          "required_previous_shot_reference": "shot_003"
+        }
+      }
+    },
+    {
+      "shot_number": 5,
+      "request": {
+        "prompt": "Cinematic photorealistic macro shot of the same weathered brass astrolabe as Anant's brown leather-gloved fingers turn its single outer ring a quarter turn. The engraved ring moves slowly and stops; dust rests in the grooves, warm copper highlights against indigo shadow, stable framing and shallow depth of field, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant turns one ring of the exposed astrolabe.",
+          "characters_present": [
+            "Anant (hands only)"
+          ],
+          "character_action": "Turns the astrolabe's outer brass ring a quarter turn.",
+          "location": "Interior entrance lintel of the same sandstone observatory.",
+          "time_of_day": "Blue twilight at the entrance, fading into interior shadow.",
+          "weather_environment": "Still indoor air with fine dust in the brass grooves.",
+          "camera_shot_type": "Macro close-up.",
+          "camera_direction_movement": "Locked macro frame; the ring alone turns and stops.",
+          "visual_prompt": "Cinematic photorealistic macro shot of the same weathered brass astrolabe as Anant's brown leather-gloved fingers turn its single outer ring a quarter turn. The engraved ring moves slowly and stops; dust rests in the grooves, warm copper highlights against indigo shadow, stable framing and shallow depth of field, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Continue the hand movement from shot 4; preserve the astrolabe's brass patina and single-ring mechanism.",
+          "required_previous_shot_reference": "shot_004"
+        }
+      }
+    },
+    {
+      "shot_number": 6,
+      "request": {
+        "prompt": "Cinematic photorealistic over-the-shoulder shot of Anant aligning the same brass astrolabe with the twin moons visible through a narrow opening in the observatory roof. His indigo hood and charcoal scarf frame the brass instrument; he makes one small adjustment and holds still, blue twilight, restrained camera, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant aligns the astrolabe with the twin moons.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Makes one small alignment adjustment to the astrolabe.",
+          "location": "Interior of the sandstone observatory beneath a narrow roof opening.",
+          "time_of_day": "Blue twilight with twin moons framed through the opening.",
+          "weather_environment": "Still chamber air; the exterior salt wind is distant.",
+          "camera_shot_type": "Over-the-shoulder medium shot.",
+          "camera_direction_movement": "Gentle push-in that settles when the ring aligns.",
+          "visual_prompt": "Cinematic photorealistic over-the-shoulder shot of Anant aligning the same brass astrolabe with the twin moons visible through a narrow opening in the observatory roof. His indigo hood and charcoal scarf frame the brass instrument; he makes one small adjustment and holds still, blue twilight, restrained camera, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Keep Anant's hood, scarf, and shoulder placement consistent; the astrolabe remains fixed to the lintel.",
+          "required_previous_shot_reference": "shot_005"
+        }
+      }
+    },
+    {
+      "shot_number": 7,
+      "request": {
+        "prompt": "Cinematic photorealistic close-up inside the same observatory: Anant's brown leather-gloved hand reaches toward a palm-sized translucent sapphire prism resting in a shallow sandstone niche. Fine gold filaments are visible inside the prism but it is not glowing yet; one careful reach, cool indigo shadows, warm brass edge light, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant discovers a sapphire prism in a sandstone niche.",
+          "characters_present": [
+            "Anant (hand only)"
+          ],
+          "character_action": "Reaches toward the resting sapphire prism.",
+          "location": "Shallow niche in the observatory's inner sandstone wall.",
+          "time_of_day": "Blue twilight outside; dim indigo interior.",
+          "weather_environment": "Still indoor air with settled dust.",
+          "camera_shot_type": "Close-up insert.",
+          "camera_direction_movement": "Slow, short push-in toward the reaching glove and prism.",
+          "visual_prompt": "Cinematic photorealistic close-up inside the same observatory: Anant's brown leather-gloved hand reaches toward a palm-sized translucent sapphire prism resting in a shallow sandstone niche. Fine gold filaments are visible inside the prism but it is not glowing yet; one careful reach, cool indigo shadows, warm brass edge light, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Introduce one palm-sized sapphire prism with fine gold filaments. It is unlit here and remains the same prop in every later appearance.",
+          "required_previous_shot_reference": "shot_006"
+        }
+      }
+    },
+    {
+      "shot_number": 8,
+      "request": {
+        "prompt": "Cinematic photorealistic medium close-up of Anant, the same traveler in indigo hood and charcoal scarf, lifting the palm-sized sapphire prism from the sandstone niche with both brown leather-gloved hands. The fine gold filaments catch a faint warm highlight; the prism remains unlit, slow controlled movement, shallow focus, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant lifts the sapphire prism from its niche.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Lifts the prism with both gloved hands.",
+          "location": "Inside the sandstone observatory at the same niche.",
+          "time_of_day": "Blue twilight outside; indigo interior shadows.",
+          "weather_environment": "Still, dust-softened air.",
+          "camera_shot_type": "Medium close-up.",
+          "camera_direction_movement": "Subtle push-in following the prism upward.",
+          "visual_prompt": "Cinematic photorealistic medium close-up of Anant, the same traveler in indigo hood and charcoal scarf, lifting the palm-sized sapphire prism from the sandstone niche with both brown leather-gloved hands. The fine gold filaments catch a faint warm highlight; the prism remains unlit, slow controlled movement, shallow focus, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Match the hand reaching in shot 7; Anant now holds the same prism and does not put it down again.",
+          "required_previous_shot_reference": "shot_007"
+        }
+      }
+    },
+    {
+      "shot_number": 9,
+      "request": {
+        "prompt": "Cinematic photorealistic close insert of the sapphire prism resting in Anant's brown leather-gloved hands as its fine internal gold filaments begin one soft cyan-and-gold pulse. The prism stays the same size and shape; its light gently illuminates the glove and nearby sandstone, locked camera, no sparks, text, or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "The prism gives its first soft pulse of light.",
+          "characters_present": [
+            "Anant (hands only)"
+          ],
+          "character_action": "Holds the prism steady as it emits one soft pulse.",
+          "location": "The niche alcove inside the sandstone observatory.",
+          "time_of_day": "Blue twilight outside; subdued interior.",
+          "weather_environment": "Still air; dust is faintly visible in the prism light.",
+          "camera_shot_type": "Close insert.",
+          "camera_direction_movement": "Locked shot; only the light softly pulses.",
+          "visual_prompt": "Cinematic photorealistic close insert of the sapphire prism resting in Anant's brown leather-gloved hands as its fine internal gold filaments begin one soft cyan-and-gold pulse. The prism stays the same size and shape; its light gently illuminates the glove and nearby sandstone, locked camera, no sparks, text, or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The glow is restrained and steady; preserve the prism's translucent sapphire shape and gold filaments.",
+          "required_previous_shot_reference": "shot_008"
+        }
+      }
+    },
+    {
+      "shot_number": 10,
+      "request": {
+        "prompt": "Cinematic photorealistic over-the-shoulder shot behind Anant as the same prism casts a single thin gold star-map line across the dusty observatory floor toward the red sandstone ridge visible through the doorway. Anant holds still and watches; indigo shadows, restrained cyan-gold glow, stable composition, no readable symbols, text, or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "A single projected line points from the observatory toward the red ridge.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Holds the prism still and watches the line settle toward the ridge.",
+          "location": "Observatory interior looking out through its doorway to the red ridge.",
+          "time_of_day": "Late blue twilight beneath the twin moons.",
+          "weather_environment": "Dry salt wind moves faint dust at the doorway; interior remains still.",
+          "camera_shot_type": "Over-the-shoulder wide shot.",
+          "camera_direction_movement": "Slow tilt from the prism to the line and distant ridge.",
+          "visual_prompt": "Cinematic photorealistic over-the-shoulder shot behind Anant as the same prism casts a single thin gold star-map line across the dusty observatory floor toward the red sandstone ridge visible through the doorway. Anant holds still and watches; indigo shadows, restrained cyan-gold glow, stable composition, no readable symbols, text, or logos.",
+          "transition_to_next_shot": {
+            "type": "fade",
+            "overlap_seconds": 0.5
+          },
+          "continuity_notes": "This completes the discovery beat. The fade bridges the observatory interior to the route outside; keep the ridge in the same direction as shot 1.",
+          "required_previous_shot_reference": "shot_009"
+        }
+      }
+    },
+    {
+      "shot_number": 11,
+      "request": {
+        "prompt": "Cinematic photorealistic wide rear shot of Anant exiting the same sandstone observatory and taking one measured step toward the red ridge indicated by the prism. His indigo hooded coat, charcoal scarf, gloves, brass satchel, and sapphire prism remain unchanged; twin moons above, dry red dust, restrained forward camera, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant leaves the observatory and begins following the projected direction.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Takes one step out of the doorway toward the red ridge.",
+          "location": "Observatory threshold opening onto the sandstone ridge path.",
+          "time_of_day": "Late twilight under the twin moons.",
+          "weather_environment": "Dry wind carries a narrow stream of red dust.",
+          "camera_shot_type": "Wide rear shot.",
+          "camera_direction_movement": "Gentle forward track behind Anant.",
+          "visual_prompt": "Cinematic photorealistic wide rear shot of Anant exiting the same sandstone observatory and taking one measured step toward the red ridge indicated by the prism. His indigo hooded coat, charcoal scarf, gloves, brass satchel, and sapphire prism remain unchanged; twin moons above, dry red dust, restrained forward camera, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Resume the direction established by the star-map line in shot 10; the prism stays with Anant.",
+          "required_previous_shot_reference": "shot_010"
+        }
+      }
+    },
+    {
+      "shot_number": 12,
+      "request": {
+        "prompt": "Cinematic photorealistic low side-tracking shot of Anant's brown leather boots taking one deliberate step along a narrow red sandstone trail. The hem of the same indigo coat and brass satchel edge are visible; the trail angles gently toward frame right, twin-moon indigo light, light red dust, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant follows the ridge trail in the direction shown by the prism.",
+          "characters_present": [
+            "Anant (lower body)"
+          ],
+          "character_action": "Takes one deliberate step along the sandstone trail.",
+          "location": "Narrow red sandstone trail above the salt basin.",
+          "time_of_day": "Blue twilight deepening toward night.",
+          "weather_environment": "Dry, light wind carries red dust along the path.",
+          "camera_shot_type": "Low side-tracking shot.",
+          "camera_direction_movement": "Tracks left-to-right with the single step.",
+          "visual_prompt": "Cinematic photorealistic low side-tracking shot of Anant's brown leather boots taking one deliberate step along a narrow red sandstone trail. The hem of the same indigo coat and brass satchel edge are visible; the trail angles gently toward frame right, twin-moon indigo light, light red dust, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Maintain the frame-right travel direction and the same boots and coat hem from shot 11.",
+          "required_previous_shot_reference": "shot_011"
+        }
+      }
+    },
+    {
+      "shot_number": 13,
+      "request": {
+        "prompt": "Cinematic photorealistic medium-wide shot of Anant pausing on the same red sandstone trail while one narrow gust lifts dust across the empty foreground. His indigo hood and charcoal scarf move slightly in the wind; the twin moons and dark ridge remain steady, locked camera, one environmental movement, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "A brief ridge gust passes as Anant pauses.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Pauses and braces gently against one gust.",
+          "location": "Same red sandstone trail along the ridge.",
+          "time_of_day": "Indigo night just after twilight.",
+          "weather_environment": "One dry gust carries a thin veil of red sand; no storm.",
+          "camera_shot_type": "Medium-wide shot.",
+          "camera_direction_movement": "Locked frame; dust crosses foreground from left to right.",
+          "visual_prompt": "Cinematic photorealistic medium-wide shot of Anant pausing on the same red sandstone trail while one narrow gust lifts dust across the empty foreground. His indigo hood and charcoal scarf move slightly in the wind; the twin moons and dark ridge remain steady, locked camera, one environmental movement, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Keep the weather within the established dry ridge wind; this is a brief gust, not a change of scene or storm.",
+          "required_previous_shot_reference": "shot_012"
+        }
+      }
+    },
+    {
+      "shot_number": 14,
+      "request": {
+        "prompt": "Cinematic photorealistic medium close-up of Anant on the red ridge, lifting his gaze from the sapphire prism toward the obsidian arch on the far crest. His short black hair, neat beard, indigo hood, charcoal scarf, and calm focused expression remain consistent; soft moonlit edge light, minimal head movement, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant identifies the obsidian arch at the end of the ridge path.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Lifts his gaze from the prism toward the distant arch.",
+          "location": "Red sandstone ridge with the obsidian arch on the far crest.",
+          "time_of_day": "Indigo night under twin-moon light.",
+          "weather_environment": "Dry air with a faint residual red-dust haze.",
+          "camera_shot_type": "Medium close-up.",
+          "camera_direction_movement": "Very slow push-in; Anant's eyes rise once.",
+          "visual_prompt": "Cinematic photorealistic medium close-up of Anant on the red ridge, lifting his gaze from the sapphire prism toward the obsidian arch on the far crest. His short black hair, neat beard, indigo hood, charcoal scarf, and calm focused expression remain consistent; soft moonlit edge light, minimal head movement, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Match the focused expression and screen direction from shot 13; the arch is the destination indicated in shot 10.",
+          "required_previous_shot_reference": "shot_013"
+        }
+      }
+    },
+    {
+      "shot_number": 15,
+      "request": {
+        "prompt": "Cinematic photorealistic close side-profile of Anant tightening his charcoal scarf once against the cold ridge wind. The same indigo hooded coat, short black hair, neat beard, and brown leather gloves are visible; the sapphire prism rests securely in his gloved left hand, twin moons above, restrained motion, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant adjusts his scarf before continuing along the cold ridge.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Tightens the charcoal scarf once.",
+          "location": "Wind-exposed red sandstone ridge.",
+          "time_of_day": "Indigo night under twin moons.",
+          "weather_environment": "Cold, dry ridge wind; faint red dust remains low to the ground.",
+          "camera_shot_type": "Close side-profile.",
+          "camera_direction_movement": "Locked close frame; one small hand movement.",
+          "visual_prompt": "Cinematic photorealistic close side-profile of Anant tightening his charcoal scarf once against the cold ridge wind. The same indigo hooded coat, short black hair, neat beard, and brown leather gloves are visible; the sapphire prism rests securely in his gloved left hand, twin moons above, restrained motion, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Keep the prism in Anant's left hand while his right hand adjusts the scarf; do not alter wardrobe.",
+          "required_previous_shot_reference": "shot_014"
+        }
+      }
+    },
+    {
+      "shot_number": 16,
+      "request": {
+        "prompt": "Cinematic photorealistic wide side view of Anant taking one careful step onto an ancient narrow stone bridge over a blue-mist ravine. He wears the same indigo coat, charcoal scarf, and brass satchel and holds the sapphire prism close to his chest; the bridge is stable, the movement is simple, moonlit ridge, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant steps onto the old stone bridge leading to the obsidian arch.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Takes one careful step onto the bridge.",
+          "location": "Ancient stone footbridge spanning a mist-filled ravine on the ridge.",
+          "time_of_day": "Indigo night under twin moons.",
+          "weather_environment": "Cold still mist below the bridge; dry wind above.",
+          "camera_shot_type": "Wide side view.",
+          "camera_direction_movement": "Short lateral track that follows the step.",
+          "visual_prompt": "Cinematic photorealistic wide side view of Anant taking one careful step onto an ancient narrow stone bridge over a blue-mist ravine. He wears the same indigo coat, charcoal scarf, and brass satchel and holds the sapphire prism close to his chest; the bridge is stable, the movement is simple, moonlit ridge, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Continue toward frame right from shot 12; keep the bridge stones broad and stable rather than depicting a rope bridge.",
+          "required_previous_shot_reference": "shot_015"
+        }
+      }
+    },
+    {
+      "shot_number": 17,
+      "request": {
+        "prompt": "Cinematic photorealistic medium insert of Anant's brown leather-gloved right hand resting on the worn stone parapet of the same bridge. The sapphire prism remains visible in his left hand near the indigo coat; blue mist sits far below, cool moonlight, one steadying touch, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant steadies himself with one hand on the stone parapet.",
+          "characters_present": [
+            "Anant (hands and torso)"
+          ],
+          "character_action": "Places his right hand on the bridge parapet.",
+          "location": "Midpoint of the same stone bridge above the ravine.",
+          "time_of_day": "Indigo night.",
+          "weather_environment": "Cold blue mist below the bridge; no precipitation.",
+          "camera_shot_type": "Medium insert.",
+          "camera_direction_movement": "Gentle lateral drift ending on the gloved hand.",
+          "visual_prompt": "Cinematic photorealistic medium insert of Anant's brown leather-gloved right hand resting on the worn stone parapet of the same bridge. The sapphire prism remains visible in his left hand near the indigo coat; blue mist sits far below, cool moonlight, one steadying touch, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Match the bridge stone texture and mist from shot 16; the prism stays in Anant's left hand.",
+          "required_previous_shot_reference": "shot_016"
+        }
+      }
+    },
+    {
+      "shot_number": 18,
+      "request": {
+        "prompt": "Cinematic photorealistic low-angle wide shot of Anant reaching the far end of the stone bridge and stopping beneath the same monolithic obsidian arch. His indigo silhouette and brass satchel are clear against the twin-moon sky; the sapphire prism gives a restrained cyan glow, steady composition, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant arrives beneath the obsidian arch.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Stops beneath the arch at the far end of the bridge.",
+          "location": "Ridge crest at the monolithic obsidian arch.",
+          "time_of_day": "Indigo night under twin moons.",
+          "weather_environment": "Wind is weaker at the crest; ravine mist remains behind him.",
+          "camera_shot_type": "Low-angle wide shot.",
+          "camera_direction_movement": "Slow tilt from the bridge stones to the arch.",
+          "visual_prompt": "Cinematic photorealistic low-angle wide shot of Anant reaching the far end of the stone bridge and stopping beneath the same monolithic obsidian arch. His indigo silhouette and brass satchel are clear against the twin-moon sky; the sapphire prism gives a restrained cyan glow, steady composition, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The arch is the destination from shot 14; keep its silhouette and the bridge direction consistent.",
+          "required_previous_shot_reference": "shot_017"
+        }
+      }
+    },
+    {
+      "shot_number": 19,
+      "request": {
+        "prompt": "Cinematic photorealistic close insert of Anant's brown leather-gloved palm touching a three-point star carving at the center of the obsidian arch. The sapphire prism is held low in his other hand; matte black stone, a thin copper edge, twin-moon rim light, one deliberate touch, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant touches the star carving at the center of the obsidian arch.",
+          "characters_present": [
+            "Anant (hands only)"
+          ],
+          "character_action": "Places one gloved palm on the carved star.",
+          "location": "Center of the obsidian arch on the ridge crest.",
+          "time_of_day": "Indigo night.",
+          "weather_environment": "Sheltered from wind beneath the arch; faint mist behind.",
+          "camera_shot_type": "Close insert.",
+          "camera_direction_movement": "Locked frame on the hand meeting the stone.",
+          "visual_prompt": "Cinematic photorealistic close insert of Anant's brown leather-gloved palm touching a three-point star carving at the center of the obsidian arch. The sapphire prism is held low in his other hand; matte black stone, a thin copper edge, twin-moon rim light, one deliberate touch, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The carving is a simple three-point mark, not readable writing; preserve the dark stone and prism position.",
+          "required_previous_shot_reference": "shot_018"
+        }
+      }
+    },
+    {
+      "shot_number": 20,
+      "request": {
+        "prompt": "Cinematic photorealistic over-the-shoulder shot of Anant watching one thin cyan-and-gold line illuminate along the central groove of the same obsidian arch. His hand remains on the three-point carving and the sapphire prism stays in his other hand; the glow is subtle, twin moons behind, restrained camera, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "A narrow light line traces the arch's central groove.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Holds his palm against the carving as the groove lights.",
+          "location": "Obsidian arch threshold.",
+          "time_of_day": "Indigo night, approaching the darkest part of night.",
+          "weather_environment": "Sheltered, still air beneath the arch.",
+          "camera_shot_type": "Over-the-shoulder medium shot.",
+          "camera_direction_movement": "Slow tilt follows the narrow light line upward.",
+          "visual_prompt": "Cinematic photorealistic over-the-shoulder shot of Anant watching one thin cyan-and-gold line illuminate along the central groove of the same obsidian arch. His hand remains on the three-point carving and the sapphire prism stays in his other hand; the glow is subtle, twin moons behind, restrained camera, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "fade",
+            "overlap_seconds": 0.5
+          },
+          "continuity_notes": "The arch's light is a direct response to the prism and carving. Fade into the connected inner chamber without changing Anant or his props.",
+          "required_previous_shot_reference": "shot_019"
+        }
+      }
+    },
+    {
+      "shot_number": 21,
+      "request": {
+        "prompt": "Cinematic photorealistic wide interior shot of Anant taking one step through the illuminated obsidian arch into a circular underground observatory. The same indigo coat, charcoal scarf, brass satchel, and sapphire prism remain visible; a single basalt dial stands in the center, dust suspended in still air, muted blue-gold light, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant enters the circular underground observatory.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Takes one step over the threshold into the chamber.",
+          "location": "Circular underground observatory beyond the obsidian arch.",
+          "time_of_day": "Night outside; the chamber is lit by the arch and prism.",
+          "weather_environment": "Still underground air with sparse floating dust.",
+          "camera_shot_type": "Wide interior shot.",
+          "camera_direction_movement": "Short rear dolly as Anant crosses the threshold.",
+          "visual_prompt": "Cinematic photorealistic wide interior shot of Anant taking one step through the illuminated obsidian arch into a circular underground observatory. The same indigo coat, charcoal scarf, brass satchel, and sapphire prism remain visible; a single basalt dial stands in the center, dust suspended in still air, muted blue-gold light, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Continue through the arch from shot 20; introduce one central basalt dial, which remains in the same chamber through shot 27.",
+          "required_previous_shot_reference": "shot_020"
+        }
+      }
+    },
+    {
+      "shot_number": 22,
+      "request": {
+        "prompt": "Cinematic photorealistic medium shot of Anant placing the same palm-sized sapphire prism into a single shallow socket at the center of the basalt dial. His brown leather gloves and indigo sleeves are clearly visible; the prism fits without force, steady blue-gold chamber light, one simple placement, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant places the sapphire prism in the basalt dial's central socket.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Sets the prism into the single central socket.",
+          "location": "Center of the circular underground observatory.",
+          "time_of_day": "Night outside; steady prism and arch light inside.",
+          "weather_environment": "Still air, sparse dust, no wind indoors.",
+          "camera_shot_type": "Medium shot.",
+          "camera_direction_movement": "Gentle push-in toward the single placement.",
+          "visual_prompt": "Cinematic photorealistic medium shot of Anant placing the same palm-sized sapphire prism into a single shallow socket at the center of the basalt dial. His brown leather gloves and indigo sleeves are clearly visible; the prism fits without force, steady blue-gold chamber light, one simple placement, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The prism is the one carried since shot 8; it is now seated in the dial and stays there through shot 27.",
+          "required_previous_shot_reference": "shot_021"
+        }
+      }
+    },
+    {
+      "shot_number": 23,
+      "request": {
+        "prompt": "Cinematic photorealistic macro close-up of the basalt dial as one narrow carved stone ring rotates slowly until its notch aligns with the sapphire prism. Anant's brown leather-gloved fingertip leaves the ring; the prism remains fixed in its socket, warm gold detail against indigo shadow, no extra moving parts, text, or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "The astrolabe ring aligns its notch with the seated prism.",
+          "characters_present": [
+            "Anant (hand only)"
+          ],
+          "character_action": "Finishes one small adjustment to the brass ring.",
+          "location": "Basalt dial at the center of the underground observatory.",
+          "time_of_day": "Night; chamber illumination comes from the prism and arch.",
+          "weather_environment": "Still indoor air with faint dust.",
+          "camera_shot_type": "Macro close-up.",
+          "camera_direction_movement": "Locked macro frame; one ring turns and stops.",
+          "visual_prompt": "Cinematic photorealistic macro close-up of the basalt dial as one narrow carved stone ring rotates slowly until its notch aligns with the sapphire prism. Anant's brown leather-gloved fingertip leaves the ring; the prism remains fixed in its socket, warm gold detail against indigo shadow, no extra moving parts, text, or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Match the prism position from shot 22. Only the basalt dial's single carved stone ring moves; the separate brass astrolabe remains at the surface observatory lintel.",
+          "required_previous_shot_reference": "shot_022"
+        }
+      }
+    },
+    {
+      "shot_number": 24,
+      "request": {
+        "prompt": "Cinematic photorealistic top-down shot of a single thin golden circle of light appearing on the stone floor around Anant's boots, centered beneath the aligned basalt dial. Anant stands still in the same dark trousers and brown leather boots; the circle brightens once, sparse dust, stable overhead camera, no symbols, text, or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "A golden circle of light appears around Anant beneath the dial.",
+          "characters_present": [
+            "Anant (lower body)"
+          ],
+          "character_action": "Stands still as the floor circle brightens once.",
+          "location": "Stone floor directly below the central basalt dial.",
+          "time_of_day": "Night in the underground chamber.",
+          "weather_environment": "Still air, with dust motes in the golden light.",
+          "camera_shot_type": "Top-down overhead shot.",
+          "camera_direction_movement": "Locked overhead framing; the light alone brightens.",
+          "visual_prompt": "Cinematic photorealistic top-down shot of a single thin golden circle of light appearing on the stone floor around Anant's boots, centered beneath the aligned basalt dial. Anant stands still in the same dark trousers and brown leather boots; the circle brightens once, sparse dust, stable overhead camera, no symbols, text, or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The circle is a simple light effect caused by the alignment in shot 23; do not add runes or extra rings.",
+          "required_previous_shot_reference": "shot_023"
+        }
+      }
+    },
+    {
+      "shot_number": 25,
+      "request": {
+        "prompt": "Cinematic photorealistic close-up of Anant's face as he lifts his eyes toward the ceiling of the same chamber. A single golden circle is reflected in his dark eyes; retain medium-brown skin, short black hair, neat beard, indigo hood, and calm expression, soft cyan-gold light, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant looks up as the dial's light reaches the chamber ceiling.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Raises his eyes toward the ceiling.",
+          "location": "Beside the central dial in the underground observatory.",
+          "time_of_day": "Night; the chamber is illuminated by the dial.",
+          "weather_environment": "Still indoor air; faint dust catches the light.",
+          "camera_shot_type": "Close-up portrait.",
+          "camera_direction_movement": "Subtle push-in as Anant's gaze rises.",
+          "visual_prompt": "Cinematic photorealistic close-up of Anant's face as he lifts his eyes toward the ceiling of the same chamber. A single golden circle is reflected in his dark eyes; retain medium-brown skin, short black hair, neat beard, indigo hood, and calm expression, soft cyan-gold light, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Preserve the established face and hood; the reflected light follows the floor circle in shot 24.",
+          "required_previous_shot_reference": "shot_024"
+        }
+      }
+    },
+    {
+      "shot_number": 26,
+      "request": {
+        "prompt": "Cinematic photorealistic medium-wide shot of a narrow vertical seam of warm dawn-colored light appearing in the sealed stone wall of the underground observatory. Anant stands still beside the basalt dial in silhouette; the same prism remains seated, dust glows softly, the wall does not break apart, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "A narrow seam of warm light appears in the chamber wall.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Stands beside the dial and watches the seam appear.",
+          "location": "Sealed wall of the underground observatory chamber.",
+          "time_of_day": "Night in the chamber; the light is dawn-colored.",
+          "weather_environment": "Still air with suspended dust illuminated by the seam.",
+          "camera_shot_type": "Medium-wide shot.",
+          "camera_direction_movement": "Slow pan from Anant and the dial to the narrow seam.",
+          "visual_prompt": "Cinematic photorealistic medium-wide shot of a narrow vertical seam of warm dawn-colored light appearing in the sealed stone wall of the underground observatory. Anant stands still beside the basalt dial in silhouette; the same prism remains seated, dust glows softly, the wall does not break apart, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Reveal only a narrow light seam, not a collapsing wall or complex portal; the dial and prism remain in place.",
+          "required_previous_shot_reference": "shot_025"
+        }
+      }
+    },
+    {
+      "shot_number": 27,
+      "request": {
+        "prompt": "Cinematic photorealistic rear medium shot of Anant taking one measured step toward the narrow golden seam in the chamber wall. His indigo coat, charcoal scarf, brass satchel, and gloved hands remain consistent; the basalt dial with the seated sapphire prism stays behind him, restrained forward camera, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant approaches the opening marked by the golden seam.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Takes one measured step toward the seam.",
+          "location": "Underground observatory, between the central dial and illuminated wall.",
+          "time_of_day": "Night inside the chamber.",
+          "weather_environment": "Still air; warm light falls across the stone floor.",
+          "camera_shot_type": "Rear medium shot.",
+          "camera_direction_movement": "Short forward track with Anant's single step.",
+          "visual_prompt": "Cinematic photorealistic rear medium shot of Anant taking one measured step toward the narrow golden seam in the chamber wall. His indigo coat, charcoal scarf, brass satchel, and gloved hands remain consistent; the basalt dial with the seated sapphire prism stays behind him, restrained forward camera, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The dial and prism remain behind Anant; the seam is directly ahead and is the same light from shot 26.",
+          "required_previous_shot_reference": "shot_026"
+        }
+      }
+    },
+    {
+      "shot_number": 28,
+      "request": {
+        "prompt": "Cinematic photorealistic wide rear shot of Anant stepping through the narrow threshold and emerging onto the same reflective salt basin before sunrise. The observatory's sandstone silhouette remains behind him; twin moons fade in the indigo sky, the wind has eased, one simple crossing motion, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant crosses the threshold back to the salt basin.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Steps through the threshold onto the salt flat.",
+          "location": "Reflective salt basin outside the same observatory.",
+          "time_of_day": "Pre-dawn; twin moons are fading.",
+          "weather_environment": "Wind has eased; thin cool haze hangs over the salt.",
+          "camera_shot_type": "Wide rear shot.",
+          "camera_direction_movement": "Static wide frame as Anant crosses into view.",
+          "visual_prompt": "Cinematic photorealistic wide rear shot of Anant stepping through the narrow threshold and emerging onto the same reflective salt basin before sunrise. The observatory's sandstone silhouette remains behind him; twin moons fade in the indigo sky, the wind has eased, one simple crossing motion, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "Return to the salt basin from shot 1; keep the same observatory silhouette and carry the color progression toward dawn.",
+          "required_previous_shot_reference": "shot_027"
+        }
+      }
+    },
+    {
+      "shot_number": 29,
+      "request": {
+        "prompt": "Cinematic photorealistic medium-wide profile of Anant lowering the same sapphire prism from his chest to his side as the first thin golden sunlight reaches the reflective salt basin. Keep his indigo coat, charcoal scarf, brass satchel, and face unchanged; the observatory remains in the distance, calm dawn haze, one simple lowering motion, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant lowers the prism as the first sunlight reaches the basin.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Lowers the prism from his chest to his side.",
+          "location": "Open salt basin with the observatory in the distance.",
+          "time_of_day": "First dawn; the twin moons are nearly gone.",
+          "weather_environment": "Calm, dry air with a thin golden haze.",
+          "camera_shot_type": "Medium-wide profile.",
+          "camera_direction_movement": "Gentle lateral drift; the hand lowers once.",
+          "visual_prompt": "Cinematic photorealistic medium-wide profile of Anant lowering the same sapphire prism from his chest to his side as the first thin golden sunlight reaches the reflective salt basin. Keep his indigo coat, charcoal scarf, brass satchel, and face unchanged; the observatory remains in the distance, calm dawn haze, one simple lowering motion, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0
+          },
+          "continuity_notes": "The prism returns to a steady, restrained glow; dawn is a gradual lighting change, not a sudden flash.",
+          "required_previous_shot_reference": "shot_028"
+        }
+      }
+    },
+    {
+      "shot_number": 30,
+      "request": {
+        "prompt": "Cinematic photorealistic wide rear shot of Anant taking one final measured step across the mirror-like salt basin toward the golden dawn horizon. His weathered indigo coat, charcoal scarf, brass satchel, and sapphire prism remain identifiable; the sandstone observatory recedes behind him, calm air, slow pull-back, grounded fantasy, no text or logos.",
+        "duration_seconds": 2.0,
+        "metadata": {
+          "duration": 2.0,
+          "scene_description": "Anant continues toward the sunrise as the observatory recedes behind him.",
+          "characters_present": [
+            "Anant"
+          ],
+          "character_action": "Takes one final measured step toward the golden horizon.",
+          "location": "Reflective salt basin facing the open dawn horizon.",
+          "time_of_day": "Early dawn.",
+          "weather_environment": "Calm dry air; gold light reflects softly on the salt.",
+          "camera_shot_type": "Wide rear closing shot.",
+          "camera_direction_movement": "Slow pull-back as Anant advances one step.",
+          "visual_prompt": "Cinematic photorealistic wide rear shot of Anant taking one final measured step across the mirror-like salt basin toward the golden dawn horizon. His weathered indigo coat, charcoal scarf, brass satchel, and sapphire prism remain identifiable; the sandstone observatory recedes behind him, calm air, slow pull-back, grounded fantasy, no text or logos.",
+          "transition_to_next_shot": {
+            "type": "cut",
+            "overlap_seconds": 0.0,
+            "note": "Final shot; no following shot."
+          },
+          "continuity_notes": "Close on the same traveler and basin established in shot 1; retain the prism and complete the twilight-to-dawn color arc.",
+          "required_previous_shot_reference": "shot_029"
+        }
+      }
+    }
+  ]
+}

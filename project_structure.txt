@@ -1,0 +1,63 @@
+Folder PATH listing for volume Windows
+Volume serial number is 4888-EF0D
+C:.
+|   .gitignore
+|   docker-compose.yml
+|   project_structure.txt
+|   README.md
+|   
++---backend
+|   |   .env
+|   |   requirements.txt
+|   |   
+|   \---app
+|       |   config.py
+|       |   database.py
+|       |   main.py
+|       |   __init__.py
+|       |   
+|       +---models
+|       |       db_models.py
+|       |       __init__.py
+|       |       
+|       +---routes
+|       |       characters.py
+|       |       movie.py
+|       |       scenes.py
+|       |       story.py
+|       |       __init__.py
+|       |       
+|       \---services
+|               screenplay.py
+|               storyboard.py
+|               story_analyzer.py
+|               video.py
+|               voice.py
+|               __init__.py
+|               
++---frontend
+|   |   index.html
+|   |   package.json
+|   |   vite.config.js
+|   |   
+|   \---src
+|       |   App.css
+|       |   App.jsx
+|       |   index.css
+|       |   main.jsx
+|       |   
+|       \---services
+|               api.js
+|               
+\---generated
+    +---audio
+    |       .gitkeep
+    |       
+    +---images
+    |       .gitkeep
+    |       
+    +---movies
+    |       .gitkeep
+    |       
+    \---videos
+            .gitkeep
